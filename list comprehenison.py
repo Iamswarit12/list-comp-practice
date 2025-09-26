@@ -13,33 +13,20 @@ even_work = [x for x in even_list if x < num]
 print("\nbefore =", even_list)
 print("after =", even_work)
 
-f = input("\nEnter the string 'next' to see what I have prepared next : ")
+f = input("\nEnter 'next' to see what is next : ")
 if f == 'next' or 'Next' or 'NEXT':
     print("\nfruit conversion")
+else:
+    print("Do you no want to see what is next?")
 
 fruits = ["apple", "watermelon", "banana"]
 
-chars = (fruits)
-chars.pop(0)
-chars.insert(0, 'Apple')
-" ".join(chars)
-
-
-chars2 = (fruits)
-chars2.pop(1)
-chars2.insert(1, 'Watermelon')
-" ".join(chars2)
-
-
-chars3 = (fruits)
-chars3.pop(-1)
-chars3.insert(-1, 'Banana')
-new_s3 = " ".join(chars3)
+fruit_conversion = [x.capitalize() for x in fruits]
 
 print("\n")
 print("The original fruits")
-print("apple", "watermelon", "banana")
+print(["apple", "watermelon", "banana"])
 print()
 print("The new upper-case fruits")
-print(fruits)
+print(fruit_conversion)
 print("\n")
